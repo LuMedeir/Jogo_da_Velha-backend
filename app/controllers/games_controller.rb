@@ -1,7 +1,7 @@
 class GamesController < ActionController::API
 
   def create
-    game = Game.create
+    game = Game.create(game_state: Array.new(9, ""), winner: "")
     render json: game
   end
 
@@ -18,7 +18,7 @@ class GamesController < ActionController::API
     if @game.game_state[position].blank?
       @game.game_state[position] = player
       @game.save
-      @game.check_winner
+      @game.check_winner(player) 
     end
 
     render json: @game

@@ -23,3 +23,6 @@ compose:
 down:
 	@rails server --stop
 	@docker compose down
+
+kill:
+	@kill $(shell lsof -t -i :3000)

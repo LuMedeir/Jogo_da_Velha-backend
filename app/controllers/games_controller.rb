@@ -5,6 +5,11 @@ class GamesController < ActionController::API
     render json: game
   end
 
+  def index
+    games = Game.all
+    render json: games
+  end
+
   def show
     game = Game.find(params[:id])
     render json: game
@@ -15,7 +20,7 @@ class GamesController < ActionController::API
     position = params[:position].to_i
     player = params[:player]
 
-    if @game.game_state[position].blank?
+    if @game.game_state[position].blank? && @game.winner.blank?
       @game.game_state[position] = player
       @game.save
       @game.check_winner(player) 

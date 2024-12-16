@@ -51,6 +51,10 @@ class Game < ApplicationRecord
   end
 
   def is_full?
-    self.game_state.all? { |cell| cell.present? }
+    if self.game_state.all? { |cell| cell.present? }
+      return true
+    else
+      return false
+    end
   end
 end

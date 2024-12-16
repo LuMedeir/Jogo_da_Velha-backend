@@ -27,8 +27,10 @@ class GamesController < ActionController::API
       @game.game_state[position] = player
       @game.save
       @game.check_winner(player)
+      render json: @game, status: :ok # Código 200
+    else
+      render json: { error: "Invalid move" }, status: :bad_request # Código 400
     end
-    render json: @game, status: :ok # Código 200
   end
 
   def destroy

@@ -16,7 +16,7 @@ Este é a API backend para "Jogo da Velha", desenvolvido com Ruby on Rails. O ba
   - Banco de dados PostgreSQL.
 
 ## Como rodar a aplicação
-Como Rodar o Projeto:
+Como rodar o Projeto:
 
   1. Clone o repositório:
      ```bash
@@ -34,6 +34,12 @@ Como Rodar o Projeto:
   6. Suba o container do PostgreSQL e rode o servidor usando o Makefile:
      ```bash
      make up
+     ```
+
+## Como rodar os testes
+  1. Digite o seguinte comando:
+     ```bash
+     make test
      ```
      
 ## Principais endpoints da API

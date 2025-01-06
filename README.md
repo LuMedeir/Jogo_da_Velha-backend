@@ -10,10 +10,11 @@ Este é a API backend para "Jogo da Velha", desenvolvido com Ruby on Rails. O ba
     - Update: rematch do jogo, ou seja, que o jogo tenha uma revanche
     - Delete: apagar o jogo do histórico
 
-## Pré-requisitos
-  - Ruby versão '3.2.3' (ou mais recente).
-  - Rails versão 6.1.7.10 (ou mais recente).
-  - Banco de dados PostgreSQL.
+## Tecnologias Utilizadas
+ - Ruby on Rails: Framework Ruby para o backend.
+ - PostgreSQL: Banco de Dados.
+ - Docker: Rodar o banco de dados.
+ - RSpec: Biblioteca para testes unitários.
 
 ## Como rodar a aplicação
 Como rodar o Projeto:

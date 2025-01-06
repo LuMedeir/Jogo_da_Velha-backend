@@ -36,6 +36,7 @@ Como rodar o Projeto:
      ```bash
      make up
      ```
+  5. Acesse o backend: Abra o navegador e vá para [http://localhost:3000](http://localhost:3000);
 
 ## Como rodar os testes
   1. Digite o seguinte comando:
